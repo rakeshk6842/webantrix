@@ -1,0 +1,19 @@
+{
+  "name": "webantrix-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "cp public/logo.png dist/logo.png && cp public/favicon.png dist/favicon.png",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}

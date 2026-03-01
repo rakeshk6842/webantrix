@@ -1,0 +1,95 @@
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { fetchSiteContent } from '../services/content'
+import WebantrixLogo from '../components/WebantrixLogo'
+
+export default function Home() {
+  const [content, setContent] = useState(null)
+  useEffect(() => {
+    fetchSiteContent().then(data => setContent(data.home))
+  }, [])
+  
+  // Add Schema markup to head
+  useEffect(() => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Webantrix",
+      "url": "https://www.webantrix.com",
+      "logo": "https://www.webantrix.com/favicon.png",
+      "description": "Webantrix crafts innovative web solutions and digital experiences.",
+      "sameAs": [
+        "https://www.linkedin.com/company/webantrix",
+        "https://twitter.com/webantrix",
+        "https://github.com/webantrix"
+      ],
+      "contact": {
+        "@type": "ContactPoint",
+        "telephone": "+1-XXXXXXXXX",
+        "contactType": "Customer Support"
+      }
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.innerHTML = JSON.stringify(schema);
+    document.head.appendChild(script);
+    
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+  
+  if (!content) return <div style={{textAlign: 'center', padding: '40px', color: '#4a4a68'}}>Loading...</div>
+  return (
+    <div>
+      <section className="main-hero">
+        <div className="hero-visual">
+          <div style={{borderRadius: '16px', padding: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(230, 57, 70, 0.15)', position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, #fff0f1 0%, rgba(255, 107, 53, 0.1) 50%, rgba(157, 78, 221, 0.1) 100%)'}}>
+            <WebantrixLogo width={200} height={200} />
+          </div>
+        </div>
+        <div className="hero-content">
+          <h1>{content.heroTitle}</h1>
+          <p>{content.heroText}</p>
+          <Link className="button" to="/jobs">
+            <span>Join Our Team</span>
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          </Link>
+        </div>
+      </section>
+
+      <section id="services" style={{marginTop: '80px'}}>
+        <h2>Our Services</h2>
+        <p style={{fontSize: '1rem', color: '#4a4a68', marginBottom: '32px', maxWidth: '600px'}}>We deliver comprehensive digital solutions tailored to your business needs</p>
+        <div className="services-grid">
+          {content.services.map((s, i) => (
+            <div key={i} className="service-card">
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '40px', alignItems: 'stretch', marginBottom: '60px'}}>
+        <div className="why-section">
+          <h2>Why Webantrix?</h2>
+          <ul>
+            {content.why.map((w, i) => <li key={i}>{w}</li>)}
+          </ul>
+        </div>
+        <div className="card" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+          <h3 style={{color: '#e63946', marginBottom: '16px', fontSize: '1.3rem', fontWeight: 700}}>Our Mission</h3>
+          <p style={{color: '#4a4a68', lineHeight: 1.8, margin: 0}}>
+            Transform businesses through innovative digital experiences. We believe in creating solutions that not only meet today's needs but anticipate tomorrow's challenges, helping our clients stay ahead in an ever-evolving digital landscape.
+          </p>
+          <Link to="/about" className="cta-link" style={{marginTop: '20px'}}>
+            Learn more about us
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </Link>
+        </div>
+      </section>
+    </div>
+  )
+}

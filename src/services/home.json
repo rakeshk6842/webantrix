@@ -1,0 +1,24 @@
+{
+  "heroTitle": "Crafting Digital Excellence",
+  "heroText": "Webantrix is your creative technology partner, transforming ideas into stunning digital experiences. We specialize in web development, UI/UX design, and innovative digital solutions that help businesses thrive in the modern digital landscape.",
+  "services": [
+    { "title": "Web Development", "desc": "Custom web applications built with modern technologies like React, Next.js, and Node.js for scalable, high-performance solutions." },
+    { "title": "UI/UX Design", "desc": "Beautiful, intuitive interfaces designed with user experience at the forefront, from wireframes to polished designs." },
+    { "title": "E-Commerce Solutions", "desc": "Complete online store development with secure payments, inventory management, and seamless checkout experiences." },
+    { "title": "Mobile App Development", "desc": "Cross-platform mobile applications using React Native and Flutter that deliver native-like experiences." },
+    { "title": "Brand Identity", "desc": "Comprehensive branding services including logo design, style guides, and visual identity systems." },
+    { "title": "SEO & Digital Marketing", "desc": "Strategic SEO optimization and digital marketing campaigns to boost your online visibility and reach." },
+    { "title": "Cloud Solutions", "desc": "Cloud architecture design and deployment on AWS, Azure, and Google Cloud for reliable, scalable infrastructure." },
+    { "title": "API Development", "desc": "Robust RESTful and GraphQL APIs that power your applications with secure, efficient data exchange." },
+    { "title": "Website Maintenance", "desc": "Ongoing support, updates, and optimization to keep your digital presence running smoothly." }
+  ],
+  "why": [
+    "Pixel-perfect attention to detail in every project",
+    "Agile development process with transparent communication",
+    "Cutting-edge technologies and industry best practices",
+    "Dedicated support team available when you need them"
+  ],
+  "domains": [
+    "Technology", "E-Commerce", "Healthcare", "Finance", "Education", "Entertainment", "Real Estate", "Non-Profit"
+  ]
+}

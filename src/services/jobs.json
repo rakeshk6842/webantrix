@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Frontend Developer",
+    "body": "We're looking for an experienced React developer to lead frontend architecture and mentor junior developers. You'll work on cutting-edge projects for enterprise clients.",
+    "html_url": "https://webantrix.com/careers/senior-frontend",
+    "location": "Remote",
+    "type": "Full-time",
+    "roles": ["Lead frontend architecture decisions", "Mentor junior developers", "Build reusable component libraries"],
+    "responsibilities": ["Design scalable React applications", "Code reviews and technical guidance", "Collaborate with design and backend teams"],
+    "pay": "$120,000 - $160,000/year",
+    "bonuses": "Annual performance bonus, equity options, unlimited PTO"
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Designer",
+    "body": "Join our design team to create beautiful, user-centered interfaces. Experience with Figma and design systems required.",
+    "html_url": "https://webantrix.com/careers/ui-ux-designer",
+    "location": "San Francisco, USA",
+    "type": "Full-time",
+    "roles": ["Create wireframes and prototypes", "Develop and maintain design systems", "Conduct user research"],
+    "responsibilities": ["Design intuitive user interfaces", "Collaborate with developers on implementation", "Present designs to stakeholders"],
+    "pay": "$100,000 - $140,000/year",
+    "bonuses": "Quarterly bonus, health insurance, professional development fund"
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Developer",
+    "body": "Build end-to-end web applications using React, Node.js, and PostgreSQL. Work in an agile environment with a collaborative team.",
+    "html_url": "https://webantrix.com/careers/fullstack-developer",
+    "location": "Remote",
+    "type": "Full-time",
+    "roles": ["Develop frontend and backend features", "Design database schemas", "Deploy and maintain applications"],
+    "responsibilities": ["Build responsive web applications", "Create RESTful APIs", "Write clean, tested code"],
+    "pay": "$95,000 - $135,000/year",
+    "bonuses": "Annual bonus, stock options, flexible hours"
+  },
+  {
+    "id": 4,
+    "title": "DevOps Engineer",
+    "body": "Manage cloud infrastructure and CI/CD pipelines. Experience with AWS, Docker, and Kubernetes required.",
+    "html_url": "https://webantrix.com/careers/devops-engineer",
+    "location": "New York, USA",
+    "type": "Full-time",
+    "roles": ["Manage AWS/GCP infrastructure", "Implement CI/CD pipelines", "Monitor system performance"],
+    "responsibilities": ["Automate deployment processes", "Ensure high availability", "Security best practices"],
+    "pay": "$110,000 - $150,000/year",
+    "bonuses": "Performance bonus, certifications covered"
+  },
+  {
+    "id": 5,
+    "title": "Junior Web Developer",
+    "body": "Great opportunity for developers early in their career. You'll learn from experienced mentors while working on real projects.",
+    "html_url": "https://webantrix.com/careers/junior-developer",
+    "location": "Remote",
+    "type": "Full-time",
+    "roles": ["Build UI components", "Fix bugs and improve features", "Write documentation"],
+    "responsibilities": ["Learn modern web technologies", "Participate in code reviews", "Collaborate with senior developers"],
+    "pay": "$60,000 - $80,000/year",
+    "bonuses": "Learning stipend, mentorship program, growth opportunities"
+  },
+  {
+    "id": 6,
+    "title": "Product Manager",
+    "body": "Define product strategy and roadmap for our client projects. Work closely with design and engineering teams to deliver exceptional products.",
+    "html_url": "https://webantrix.com/careers/product-manager",
+    "location": "San Francisco, USA",
+    "type": "Full-time",
+    "roles": ["Define product roadmap", "Gather requirements", "Prioritize features"],
+    "responsibilities": ["Work with stakeholders", "Write user stories", "Track project metrics"],
+    "pay": "$115,000 - $155,000/year",
+    "bonuses": "Annual bonus, equity, flexible work"
+  }
+]
