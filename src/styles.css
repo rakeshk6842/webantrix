@@ -420,6 +420,90 @@ section > p:first-of-type {
   font-size: 0.95rem;
 }
 
+.about-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+.about-card {
+  padding: 40px;
+}
+.about-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+}
+.about-content {
+  display: grid;
+  gap: 10px;
+}
+.about-section-title {
+  margin: 22px 0 4px 0;
+  color: var(--text-primary);
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+.about-paragraph {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+.about-lead-line {
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.8;
+}
+.about-values-list {
+  margin: 4px 0 8px 0;
+  padding-left: 22px;
+}
+.about-values-list li {
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.about-timeline {
+  position: relative;
+  margin: 8px 0 6px 0;
+  padding-left: 28px;
+}
+.about-timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(230, 57, 70, 0.35), rgba(255, 107, 53, 0.08));
+}
+.about-timeline-dot {
+  position: absolute;
+  left: 2px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: 0 0 0 4px rgba(230, 57, 70, 0.1);
+}
+.about-timeline-content {
+  background: linear-gradient(135deg, #fff7f7 0%, #fff 100%);
+  border: 1px solid rgba(230, 57, 70, 0.2);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.about-timeline-year {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
 .service-details {
   max-width: 980px;
   margin: 0 auto;
@@ -533,6 +617,102 @@ section > p:first-of-type {
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 24px;
+}
+
+.industries-page {
+  margin-top: 20px;
+}
+.industries-hero {
+  background: linear-gradient(135deg, #fff5f6 0%, #fff 40%, #fff7f2 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px;
+  margin-bottom: 28px;
+}
+.industries-kicker {
+  margin: 0 0 10px 0;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.industries-hero h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.4rem;
+  line-height: 1.15;
+}
+.industries-hero > p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 760px;
+}
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+.industry-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: 24px;
+}
+.industry-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.35rem;
+  color: var(--text-primary);
+}
+.industry-card p {
+  margin: 0 0 14px 0;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.industry-details-page {
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+}
+.industry-details-breadcrumb {
+  margin: 0 0 12px 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+.industry-details-breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.industry-details-card {
+  background: linear-gradient(135deg, #fff7f8 0%, #fff 45%, #fff8f3 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  padding: 34px;
+}
+.industry-details-card h1 {
+  margin: 0 0 14px 0;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+.industry-details-heading {
+  margin: 0 0 12px 0;
+  font-size: 1.3rem;
+  color: var(--primary);
+  line-height: 1.35;
+}
+.industry-details-content {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  white-space: pre-line;
+}
+.industry-details-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 .button.button-secondary {
   background: white;
@@ -746,6 +926,41 @@ main {
   }
   .why-section {
     padding: 24px;
+  }
+  .about-page {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+  .about-card {
+    padding: 28px;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-section-title {
+    font-size: 1.25rem;
+  }
+  .about-timeline {
+    padding-left: 22px;
+  }
+  .about-timeline-content {
+    padding: 12px 14px;
+  }
+  .industries-hero {
+    padding: 24px;
+  }
+  .industries-hero h1 {
+    font-size: 1.9rem;
+  }
+  .industry-details-card {
+    padding: 24px;
+  }
+  .industry-details-card h1 {
+    font-size: 1.8rem;
+  }
+  .industry-details-actions {
+    flex-direction: column;
+    align-items: stretch;
   }
   .service-hero-card {
     padding: 24px;

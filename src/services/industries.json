@@ -1,0 +1,54 @@
+{
+  "title": "Industries We Serve",
+  "subtitle": "Targeted Local SEO strategies built for service-based businesses that rely on local visibility and trust.",
+  "items": [
+    {
+      "slug": "wellness-centers",
+      "name": "Wellness Centers",
+      "description": "Local SEO for wellness centers to attract more nearby clients and strengthen your community presence.",
+      "detailHeading": "Attract More Local Clients & Grow Your Wellness Center",
+      "detailContent": "In today's digital age, your potential clients are searching Google for terms like \"yoga studio near me\" and \"best massage therapist in [Your City].\" If your wellness center is not visible in local search, you are missing high-intent customers.\n\nOur Local SEO service is designed for wellness businesses built on trust, community, and connection. We help translate that local presence into a strong digital presence so you become the clear first choice in your area.\n\nOur strategy includes complete Google Business Profile optimization, local keyword and on-page SEO, citation consistency across key directories, review and reputation management, and monthly performance reporting focused on rankings, calls, direction requests, and profile clicks.",
+      "learnMoreUrl": "https://www.webantrix.com/wellness-centers"
+    },
+    {
+      "slug": "restaurants-cafes-and-bakeries",
+      "name": "Restaurants, Cafes and Bakeries",
+      "description": "Local SEO for food businesses that turns search visibility into reservations, orders, and foot traffic.",
+      "detailHeading": "Turn Local Searches into Loyal Diners",
+      "detailContent": "Our Local SEO service is crafted for the fast-paced environment of restaurants, cafes, and bakeries where consistency and visibility drive revenue.\n\nWe optimize your Google Business Profile like a digital storefront with menu integration, strong food photography, accurate service attributes, and regular posts for offers and events.\n\nWe also implement local keyword strategy and menu SEO, directory and citation optimization on platforms like Yelp, TripAdvisor, and OpenTable, and proactive review management to build social proof. Reporting focuses on reservations, calls, direction requests, online orders, and search rankings for profitable menu categories.",
+      "learnMoreUrl": "https://www.webantrix.com/restaurants-cafes-and-bakeries"
+    },
+    {
+      "slug": "beauty",
+      "name": "Beauty Services",
+      "description": "Local SEO for salons and beauty professionals to fill appointment books with high-intent local clients.",
+      "detailHeading": "Fill Your Appointment Book & Become the Go-To Beauty Spot",
+      "detailContent": "In beauty services, new clients search with immediate intent for terms like \"nail spa near me\" or \"best hair colorist in [City].\" If your business is not ranking in local search and maps, you lose bookings.\n\nOur Local SEO for beauty businesses includes Google profile makeover work with online booking integration, complete service menus, visual portfolio optimization, and promotional post strategy.\n\nWe also execute service-focused local keyword targeting, directory consistency (including Yelp, Vagaro, and StyleSeat), and review management workflows that turn satisfied clients into social proof. Monthly reporting tracks booking clicks, appointment calls, direction requests, and ranking growth.",
+      "learnMoreUrl": "https://www.webantrix.com/beauty"
+    },
+    {
+      "slug": "dentists",
+      "name": "Dentists",
+      "description": "Local SEO for dental practices focused on trust, patient acquisition, and long-term growth.",
+      "detailHeading": "Attract More New Patients & Grow Your Dental Practice",
+      "detailContent": "Today's patients choose dentists based on what they see online first: rankings, reviews, and trust signals. Our Local SEO service for dental practices is built to convert this intent into appointment requests.\n\nWe optimize your Google Business Profile with appointment CTAs, detailed service menus (including high-value procedures), office and staff visuals, and patient-focused FAQ and updates.\n\nOur approach also covers high-intent dental keyword strategy, E-A-T focused service pages, healthcare directory optimization across platforms like Healthgrades and Zocdoc, HIPAA-aware review management, and reporting centered on new patient inquiries, calls, direction requests, and procedure-level rankings.",
+      "learnMoreUrl": "https://www.webantrix.com/dentists"
+    },
+    {
+      "slug": "doctors",
+      "name": "Doctors, Physical Therapists, and Chiropractors",
+      "description": "Local SEO for medical practices to improve patient trust, visibility, and appointment volume.",
+      "detailHeading": "Connect with More Patients & Build Trust in Your Community",
+      "detailContent": "Modern patients search online before selecting a healthcare provider, and their choices depend on visibility, credibility, and reputation. Our Local SEO service helps medical practices become the trusted local option.\n\nWe strengthen Google Business Profile presence with appointment access, specialty and service clarity, insurance information cues, and professional office presentation.\n\nWe combine this with patient-intent keyword strategy, high-authority healthcare content, citation consistency in medical directories, HIPAA-compliant review workflows, and reporting focused on appointment requests, calls, local visibility, and service-specific ranking growth.",
+      "learnMoreUrl": "https://www.webantrix.com/doctors"
+    },
+    {
+      "slug": "lawyers",
+      "name": "Lawyers",
+      "description": "Local SEO for law firms to drive qualified case inquiries and strengthen local authority.",
+      "detailHeading": "Attract More Qualified Clients & Build Your Firm's Local Authority",
+      "detailContent": "For law firms, client acquisition starts with urgent search intent. If your practice is not visible on page one for key legal searches, potential clients often choose competitors first.\n\nOur legal-focused Local SEO strategy improves authority and conversion through Google profile optimization, consultation-focused CTAs, practice area clarity, and firm credibility signals.\n\nWe also execute legal keyword targeting, E-A-T-driven content strategy, legal directory optimization (Avvo, Justia, FindLaw, and others), and review management that aligns with professional standards. Reporting tracks qualified inquiries, case-relevant keyword rankings, and return on marketing investment.",
+      "learnMoreUrl": "https://www.webantrix.com/lawyers"
+    }
+  ]
+}

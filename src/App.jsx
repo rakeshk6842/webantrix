@@ -4,6 +4,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import ServiceDetails from './pages/ServiceDetails'
+import Industries from './pages/Industries'
+import IndustryDetails from './pages/IndustryDetails'
 import WebantrixLogo from './components/WebantrixLogo'
 
 export default function App() {
@@ -73,6 +75,7 @@ export default function App() {
           <nav className={`nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <Link to="/" onClick={closeMobileMenu} className={location.pathname === '/' && !atServices ? 'active' : ''}>Home</Link>
             <a href="#services" onClick={(e) => { handleServicesClick(e); closeMobileMenu(); }} className={atServices ? 'active' : ''} tabIndex={0}>Services</a>
+            <Link to="/industries-we-serve" onClick={closeMobileMenu} className={location.pathname === '/industries-we-serve' ? 'active' : ''}>Industries</Link>
             <Link to="/about" onClick={closeMobileMenu} className={location.pathname === '/about' ? 'active' : ''}>About</Link>
             <Link to="/contact" onClick={closeMobileMenu} className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
           </nav>
@@ -83,6 +86,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/:serviceSlug" element={<ServiceDetails />} />
+          <Route path="/industries-we-serve" element={<Industries />} />
+          <Route path="/industries-we-serve/:industrySlug" element={<IndustryDetails />} />
           <Route path="/jobs/*" element={<Navigate to="/contact" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -99,6 +104,7 @@ export default function App() {
             <div className="footer-section">
               <h4>Quick Links</h4>
               <Link to="/" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>Home</Link>
+              <Link to="/industries-we-serve" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>Industries We Serve</Link>
               <Link to="/about" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>About Us</Link>
               <Link to="/contact" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>Contact</Link>
             </div>
