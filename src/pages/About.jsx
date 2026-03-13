@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { fetchSiteContent } from '../services/content'
+import Seo from '../components/Seo'
 
 export default function About() {
   const [content, setContent] = useState(null)
@@ -9,6 +10,12 @@ export default function About() {
   if (!content) return <div style={{textAlign: 'center', padding: '40px', color: '#4a4a68'}}>Loading...</div>
   return (
     <div style={{maxWidth: '800px', margin: '60px auto', padding: '0 24px'}}>
+      <Seo
+        title="About Us"
+        description="Learn about Webantrix, our mission, and how we build innovative digital products that help businesses grow."
+        path="/about"
+      />
+
       <div className="card">
         <div style={{display: 'flex', gap: '16px', marginBottom: '32px', alignItems: 'center'}}>
           <div style={{width: '8px', height: '8px', borderRadius: '50%', background: 'linear-gradient(135deg, #e63946, #ff6b35)', flexShrink: 0}}></div>

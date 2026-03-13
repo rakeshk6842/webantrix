@@ -1,5 +1,9 @@
 {
   "email": "info@webantrix.com",
   "address": "Fairfax, VA, USA",
+  "locations": [
+    "Fairfax, VA, USA",
+    "Telangana, India"
+  ],
   "phone": "+1 (703) 595-0101"
 }

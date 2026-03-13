@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { fetchSiteContent } from '../services/content'
 import WebantrixLogo from '../components/WebantrixLogo'
+import Seo from '../components/Seo'
 
 export default function Home() {
   const [content, setContent] = useState(null)
@@ -14,40 +15,28 @@ export default function Home() {
     })
   }, [])
   
-  // Add Schema markup to head
-  useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Webantrix",
-      "url": "https://www.webantrix.com",
-      "logo": "https://www.webantrix.com/favicon.png",
-      "description": "Webantrix crafts innovative web solutions and digital experiences.",
-      "sameAs": [
-        "https://www.linkedin.com/company/webantrix",
-        "https://twitter.com/webantrix",
-        "https://github.com/webantrix"
-      ],
-      "contact": {
-        "@type": "ContactPoint",
-        "telephone": "+1-XXXXXXXXX",
-        "contactType": "Customer Support"
-      }
-    };
-    
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.innerHTML = JSON.stringify(schema);
-    document.head.appendChild(script);
-    
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-  
   if (!content) return <div style={{textAlign: 'center', padding: '40px', color: '#4a4a68'}}>Loading...</div>
   return (
     <div>
+      <Seo
+        title="Digital Solutions & Web Development"
+        description="Webantrix crafts innovative web solutions, UI/UX, cloud products, and scalable digital experiences for growing businesses."
+        path="/"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Webantrix',
+          url: 'https://www.webantrix.com',
+          logo: 'https://www.webantrix.com/favicon.png',
+          description: 'Webantrix crafts innovative web solutions and digital experiences.',
+          sameAs: [
+            'https://www.linkedin.com/company/webantrix',
+            'https://twitter.com/webantrix',
+            'https://github.com/webantrix'
+          ]
+        }}
+      />
+
       <section className="main-hero">
         <div className="hero-visual">
           <div style={{borderRadius: '16px', padding: '32px', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(230, 57, 70, 0.15)', position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, #fff0f1 0%, rgba(255, 107, 53, 0.1) 50%, rgba(157, 78, 221, 0.1) 100%)'}}>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { fetchSiteContent } from '../services/content'
+import Seo from '../components/Seo'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -20,6 +21,10 @@ export default function Contact() {
   }
 
   if (!contact) return <div style={{textAlign: 'center', padding: '40px', color: '#4a4a68'}}>Loading...</div>
+
+  const locations = contact.locations && contact.locations.length > 0
+    ? contact.locations
+    : [contact.address]
   
   if (submitted) {
     return (
@@ -37,6 +42,28 @@ export default function Contact() {
 
   return (
     <div style={{maxWidth: '1100px', margin: '40px auto', padding: '0 24px'}}>
+      <Seo
+        title="Contact"
+        description="Contact Webantrix to discuss your web development, design, cloud, and digital transformation projects."
+        path="/contact"
+        jsonLd={contact ? {
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Webantrix',
+          url: 'https://www.webantrix.com',
+          contactPoint: {
+            '@type': 'ContactPoint',
+            telephone: contact.phone,
+            email: contact.email,
+            contactType: 'customer support'
+          },
+          address: locations.map((location) => ({
+            '@type': 'PostalAddress',
+            streetAddress: location
+          }))
+        } : null}
+      />
+
       {/* Hero Section */}
       <div style={{textAlign: 'center', marginBottom: '60px'}}>
         <div style={{display: 'inline-flex', alignItems: 'center', gap: '10px', marginBottom: '16px', padding: '8px 16px', background: 'var(--primary-light)', borderRadius: '20px'}}>
@@ -69,8 +96,10 @@ export default function Contact() {
           <div style={{width: '56px', height: '56px', background: 'linear-gradient(135deg, #9d4edd, #7b2d8e)', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', boxShadow: '0 8px 20px rgba(157, 78, 221, 0.25)'}}>
             <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
           </div>
-          <h3 style={{margin: '0 0 8px 0', color: '#1a1a2e', fontWeight: 700, fontSize: '1.1rem'}}>Location</h3>
-          <p style={{color: '#9d4edd', margin: 0, fontWeight: 600, fontSize: '1rem'}}>{contact.address}</p>
+          <h3 style={{margin: '0 0 8px 0', color: '#1a1a2e', fontWeight: 700, fontSize: '1.1rem'}}>Locations</h3>
+          {locations.map((location) => (
+            <p key={location} style={{color: '#9d4edd', margin: '0 0 4px 0', fontWeight: 600, fontSize: '1rem'}}>{location}</p>
+          ))}
         </div>
       </div>
 

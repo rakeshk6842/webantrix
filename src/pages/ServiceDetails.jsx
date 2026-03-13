@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { fetchServiceBySlug } from '../services/content'
+import Seo from '../components/Seo'
 
 export default function ServiceDetails() {
   const { serviceSlug } = useParams()
@@ -39,6 +40,26 @@ export default function ServiceDetails() {
 
   return (
     <section className="service-details">
+      <Seo
+        title={`${service.title} Services`}
+        description={service.shortDesc}
+        path={`/services/${service.slug}`}
+        type="article"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: service.title,
+          description: service.shortDesc,
+          provider: {
+            '@type': 'Organization',
+            name: 'Webantrix',
+            url: 'https://www.webantrix.com'
+          },
+          serviceType: service.title,
+          areaServed: 'Worldwide'
+        }}
+      />
+
       <p className="service-breadcrumb">
         <Link to="/">Home</Link> / <span>Services</span>
       </p>
