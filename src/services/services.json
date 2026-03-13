@@ -1,0 +1,209 @@
+[
+  {
+    "slug": "web-development",
+    "title": "Web Development",
+    "shortDesc": "Custom web applications built with modern technologies like React, Next.js, and Node.js for scalable, high-performance solutions.",
+    "overview": "We create secure and scalable web applications tailored to your business workflows, customer journeys, and long-term product vision.",
+    "timeline": "4-12 weeks",
+    "idealFor": "Startups, product teams, and enterprises launching or modernizing web platforms",
+    "deliverables": [
+      "Architecture planning and technical discovery",
+      "Responsive front-end and robust back-end implementation",
+      "QA, deployment support, and post-launch optimization"
+    ],
+    "process": [
+      "Discovery and solution blueprint",
+      "Agile development with milestone demos",
+      "Testing, launch, and continuous improvements"
+    ],
+    "highlights": [
+      "Responsive front-end architecture",
+      "Scalable back-end systems",
+      "Performance and SEO optimization"
+    ]
+  },
+  {
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "shortDesc": "Beautiful, intuitive interfaces designed with user experience at the forefront, from wireframes to polished designs.",
+    "overview": "We design intuitive product experiences that reduce user friction, improve engagement, and help customers complete key actions faster.",
+    "timeline": "2-8 weeks",
+    "idealFor": "Teams building new products or improving low-conversion user journeys",
+    "deliverables": [
+      "User journey mapping and interaction design",
+      "Wireframes, prototypes, and visual interface systems",
+      "Developer-ready UI guidelines and handoff"
+    ],
+    "process": [
+      "Research and usability insight gathering",
+      "Low and high-fidelity design exploration",
+      "Validation and iterative refinement"
+    ],
+    "highlights": [
+      "Research-backed design decisions",
+      "Wireframes, prototypes, and design systems",
+      "Accessibility-first interface design"
+    ]
+  },
+  {
+    "slug": "e-commerce-solutions",
+    "title": "E-Commerce Solutions",
+    "shortDesc": "Complete online store development with secure payments, inventory management, and seamless checkout experiences.",
+    "overview": "We build conversion-focused online stores with secure transactions, streamlined checkout, and efficient order workflows.",
+    "timeline": "5-14 weeks",
+    "idealFor": "Retail brands and D2C businesses scaling online sales",
+    "deliverables": [
+      "Storefront UX and optimized product discovery",
+      "Payment, tax, shipping, and fulfillment integrations",
+      "Analytics setup and conversion tracking"
+    ],
+    "process": [
+      "Commerce strategy and platform selection",
+      "Store implementation and integration phase",
+      "Launch readiness checks and growth tuning"
+    ],
+    "highlights": [
+      "Custom storefront and checkout flows",
+      "Payment gateway integrations",
+      "Catalog, inventory, and order management"
+    ]
+  },
+  {
+    "slug": "mobile-app-development",
+    "title": "Mobile App Development",
+    "shortDesc": "Cross-platform mobile applications using React Native and Flutter that deliver native-like experiences.",
+    "overview": "We deliver high-quality cross-platform mobile apps that feel native, perform smoothly, and speed up release timelines.",
+    "timeline": "6-16 weeks",
+    "idealFor": "Businesses launching customer apps, internal tools, or field-service mobile products",
+    "deliverables": [
+      "Cross-platform app architecture and implementation",
+      "API integration, push notifications, and analytics",
+      "Store submission and release support"
+    ],
+    "process": [
+      "Product scoping and feature prioritization",
+      "Sprint-based app development and review",
+      "Testing, launch, and post-release maintenance"
+    ],
+    "highlights": [
+      "Cross-platform app architecture",
+      "Native API and device feature integration",
+      "App store deployment support"
+    ]
+  },
+  {
+    "slug": "brand-identity",
+    "title": "Brand Identity",
+    "shortDesc": "Comprehensive branding services including logo design, style guides, and visual identity systems.",
+    "overview": "We build cohesive brand identities that clearly communicate your value and create memorable market presence.",
+    "timeline": "2-6 weeks",
+    "idealFor": "New ventures, rebrands, and businesses standardizing brand assets",
+    "deliverables": [
+      "Logo concepts and final identity system",
+      "Color, typography, and usage guideline kit",
+      "Core brand collateral for web and marketing"
+    ],
+    "process": [
+      "Brand discovery and positioning workshop",
+      "Concept exploration and creative direction",
+      "Finalization, guidelines, and rollout assets"
+    ],
+    "highlights": [
+      "Logo and visual language design",
+      "Brand guidelines and style systems",
+      "Marketing-ready brand assets"
+    ]
+  },
+  {
+    "slug": "seo-digital-marketing",
+    "title": "SEO & Digital Marketing",
+    "shortDesc": "Strategic SEO optimization and digital marketing campaigns to boost your online visibility and reach.",
+    "overview": "We grow visibility, traffic quality, and lead generation through measurable SEO and digital marketing execution.",
+    "timeline": "Ongoing",
+    "idealFor": "Businesses seeking predictable inbound growth and stronger online presence",
+    "deliverables": [
+      "Technical SEO audits and implementation roadmap",
+      "Content and keyword strategy aligned to intent",
+      "Campaign setup with performance reporting"
+    ],
+    "process": [
+      "Baseline audit and growth target definition",
+      "Execution across SEO and campaign channels",
+      "Monthly optimization and performance analysis"
+    ],
+    "highlights": [
+      "Technical and on-page SEO",
+      "Content and keyword strategy",
+      "Campaign tracking and reporting"
+    ]
+  },
+  {
+    "slug": "cloud-solutions",
+    "title": "Cloud Solutions",
+    "shortDesc": "Cloud architecture design and deployment on AWS, Azure, and Google Cloud for reliable, scalable infrastructure.",
+    "overview": "We modernize and optimize infrastructure on cloud platforms for scalability, reliability, and operational efficiency.",
+    "timeline": "3-10 weeks",
+    "idealFor": "Teams migrating legacy systems or scaling digital products",
+    "deliverables": [
+      "Cloud architecture and migration planning",
+      "Infrastructure automation and CI/CD setup",
+      "Monitoring, backup, and cost optimization"
+    ],
+    "process": [
+      "Current-state infrastructure assessment",
+      "Migration and environment implementation",
+      "Stabilization and optimization phase"
+    ],
+    "highlights": [
+      "Cloud migration and architecture",
+      "CI/CD and infrastructure automation",
+      "Monitoring, backup, and disaster recovery"
+    ]
+  },
+  {
+    "slug": "api-development",
+    "title": "API Development",
+    "shortDesc": "Robust RESTful and GraphQL APIs that power your applications with secure, efficient data exchange.",
+    "overview": "We engineer secure, maintainable APIs that connect systems reliably and support future feature expansion.",
+    "timeline": "3-8 weeks",
+    "idealFor": "Product teams integrating multiple systems or exposing services to partners",
+    "deliverables": [
+      "API specification and endpoint architecture",
+      "Authentication, authorization, and validation",
+      "Documentation, tests, and versioning strategy"
+    ],
+    "process": [
+      "Contract-first API planning",
+      "Implementation with automated testing",
+      "Deployment, documentation, and support"
+    ],
+    "highlights": [
+      "REST and GraphQL API design",
+      "Authentication and authorization",
+      "Versioning, testing, and documentation"
+    ]
+  },
+  {
+    "slug": "website-maintenance",
+    "title": "Website Maintenance",
+    "shortDesc": "Ongoing support, updates, and optimization to keep your digital presence running smoothly.",
+    "overview": "We provide proactive support that keeps your website secure, stable, and consistently high performing.",
+    "timeline": "Monthly retainer",
+    "idealFor": "Teams that need reliable support without hiring full-time maintenance staff",
+    "deliverables": [
+      "Routine updates and vulnerability patching",
+      "Uptime monitoring and performance checks",
+      "Content updates and issue resolution"
+    ],
+    "process": [
+      "Site health assessment and maintenance plan",
+      "Scheduled updates and monitoring cycles",
+      "Priority support and monthly reporting"
+    ],
+    "highlights": [
+      "Routine updates and security patches",
+      "Performance monitoring and tuning",
+      "Issue resolution and support"
+    ]
+  }
+]

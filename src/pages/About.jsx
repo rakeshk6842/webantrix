@@ -18,7 +18,7 @@ export default function About() {
         <p style={{fontSize: '1.05rem', color: '#4a4a68', marginBottom: 0, lineHeight: 1.8, whiteSpace:'pre-line'}}>{content.content}</p>
       </div>
       
-      <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px', marginTop: '60px'}}>
+      {/* <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px', marginTop: '60px'}}>
         {[
           { label: 'Team Members', value: '25+' },
           { label: 'Years Experience', value: '8+' },
@@ -30,7 +30,7 @@ export default function About() {
             <p style={{fontSize: '0.95rem', color: '#6b6b8a', margin: 0, fontWeight: 500}}>{stat.label}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }

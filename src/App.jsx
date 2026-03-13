@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
-import Jobs from './pages/Jobs'
+import { Routes, Route, Link, useNavigate, useLocation, Navigate } from 'react-router-dom'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
+import ServiceDetails from './pages/ServiceDetails'
 import WebantrixLogo from './components/WebantrixLogo'
 
 export default function App() {
@@ -73,7 +73,6 @@ export default function App() {
           <nav className={`nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <Link to="/" onClick={closeMobileMenu} className={location.pathname === '/' && !atServices ? 'active' : ''}>Home</Link>
             <a href="#services" onClick={(e) => { handleServicesClick(e); closeMobileMenu(); }} className={atServices ? 'active' : ''} tabIndex={0}>Services</a>
-            <Link to="/jobs" onClick={closeMobileMenu} className={location.pathname.startsWith('/jobs') ? 'active' : ''}>Careers</Link>
             <Link to="/about" onClick={closeMobileMenu} className={location.pathname === '/about' ? 'active' : ''}>About</Link>
             <Link to="/contact" onClick={closeMobileMenu} className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
           </nav>
@@ -83,7 +82,8 @@ export default function App() {
       <main className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/jobs/*" element={<Jobs />} />
+          <Route path="/services/:serviceSlug" element={<ServiceDetails />} />
+          <Route path="/jobs/*" element={<Navigate to="/contact" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
@@ -99,7 +99,6 @@ export default function App() {
             <div className="footer-section">
               <h4>Quick Links</h4>
               <Link to="/" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>Home</Link>
-              <Link to="/jobs" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>Careers</Link>
               <Link to="/about" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>About Us</Link>
               <Link to="/contact" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>Contact</Link>
             </div>

@@ -75,7 +75,7 @@ export default function Contact() {
       </div>
 
       {/* Contact Form Section */}
-      <div style={{background: '#fff', borderRadius: '24px', padding: '48px', boxShadow: '0 4px 30px rgba(0, 0, 0, 0.08)', border: '1px solid var(--border)'}}>
+      {/* <div style={{background: '#fff', borderRadius: '24px', padding: '48px', boxShadow: '0 4px 30px rgba(0, 0, 0, 0.08)', border: '1px solid var(--border)'}}>
         <div style={{maxWidth: '600px', margin: '0 auto'}}>
           <h2 style={{fontSize: '1.75rem', fontWeight: 800, color: '#1a1a2e', margin: '0 0 8px 0', textAlign: 'center'}}>Send Us a Message</h2>
           <p style={{color: '#4a4a68', textAlign: 'center', margin: '0 0 32px 0'}}>Fill out the form below and we'll get back to you shortly.</p>
@@ -117,7 +117,7 @@ export default function Contact() {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

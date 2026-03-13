@@ -6,7 +6,12 @@ import WebantrixLogo from '../components/WebantrixLogo'
 export default function Home() {
   const [content, setContent] = useState(null)
   useEffect(() => {
-    fetchSiteContent().then(data => setContent(data.home))
+    fetchSiteContent().then((data) => {
+      setContent({
+        ...data.home,
+        services: data.services
+      })
+    })
   }, [])
   
   // Add Schema markup to head
@@ -52,8 +57,8 @@ export default function Home() {
         <div className="hero-content">
           <h1>{content.heroTitle}</h1>
           <p>{content.heroText}</p>
-          <Link className="button" to="/jobs">
-            <span>Join Our Team</span>
+          <Link className="button" to="/contact">
+            <span>Start Your Project</span>
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
           </Link>
         </div>
@@ -63,11 +68,15 @@ export default function Home() {
         <h2>Our Services</h2>
         <p style={{fontSize: '1rem', color: '#4a4a68', marginBottom: '32px', maxWidth: '600px'}}>We deliver comprehensive digital solutions tailored to your business needs</p>
         <div className="services-grid">
-          {content.services.map((s, i) => (
-            <div key={i} className="service-card">
+          {(content.services || []).map((s, i) => (
+            <article key={s.slug || i} className="service-card">
               <h3>{s.title}</h3>
-              <p>{s.desc}</p>
-            </div>
+              <p>{s.shortDesc || s.desc}</p>
+              <Link to={`/services/${s.slug}`} className="cta-link service-link">
+                View details
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+              </Link>
+            </article>
           ))}
         </div>
       </section>
