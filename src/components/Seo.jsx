@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 const SITE_URL = 'https://www.webantrix.com'
-const DEFAULT_IMAGE = `${SITE_URL}/favicon.png`
+const DEFAULT_IMAGE = `${SITE_URL}/webantrix_logo.png`
 
 function upsertMeta({ name, property, content }) {
   if (!content) return

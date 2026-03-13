@@ -39,7 +39,7 @@ function JobList() {
           "@type": "Organization",
           "name": "Webantrix",
           "sameAs": "https://www.webantrix.com",
-          "logo": "https://www.webantrix.com/favicon.png"
+          "logo": "https://www.webantrix.com/webantrix_logo.png"
         },
         "datePosted": new Date().toISOString().split('T')[0]
       }));

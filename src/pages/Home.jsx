@@ -27,7 +27,7 @@ export default function Home() {
           '@type': 'Organization',
           name: 'Webantrix',
           url: 'https://www.webantrix.com',
-          logo: 'https://www.webantrix.com/favicon.png',
+          logo: 'https://www.webantrix.com/webantrix_logo.png',
           description: 'Webantrix crafts innovative web solutions and digital experiences.',
           sameAs: [
             'https://www.linkedin.com/company/webantrix',
