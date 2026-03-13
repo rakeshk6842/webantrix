@@ -75,7 +75,7 @@ export default function App() {
           <nav className={`nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
             <Link to="/" onClick={closeMobileMenu} className={location.pathname === '/' && !atServices ? 'active' : ''}>Home</Link>
             <a href="#services" onClick={(e) => { handleServicesClick(e); closeMobileMenu(); }} className={atServices ? 'active' : ''} tabIndex={0}>Services</a>
-            <Link to="/industries-we-serve" onClick={closeMobileMenu} className={location.pathname === '/industries-we-serve' ? 'active' : ''}>Industries</Link>
+            <Link to="/industries-we-serve" onClick={closeMobileMenu} className={location.pathname === '/industries-we-serve' ? 'active' : ''}>Industries We Serve</Link>
             <Link to="/about" onClick={closeMobileMenu} className={location.pathname === '/about' ? 'active' : ''}>About</Link>
             <Link to="/contact" onClick={closeMobileMenu} className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link>
           </nav>
