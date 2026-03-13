@@ -102,12 +102,12 @@ export default function App() {
               <Link to="/about" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>About Us</Link>
               <Link to="/contact" style={{color: '#cbd5e0', textDecoration: 'none', transition: 'var(--transition)', display: 'block', marginBottom: '8px'}}>Contact</Link>
             </div>
-            <div className="footer-section">
+            {/* <div className="footer-section">
               <h4>Connect</h4>
               <a href="#" style={{color: '#cbd5e0', textDecoration: 'none', display: 'block', marginBottom: '8px'}}>LinkedIn</a>
               <a href="#" style={{color: '#cbd5e0', textDecoration: 'none', display: 'block', marginBottom: '8px'}}>Twitter</a>
               <a href="#" style={{color: '#cbd5e0', textDecoration: 'none', display: 'block', marginBottom: '8px'}}>GitHub</a>
-            </div>
+            </div> */}
           </div>
           <div className="footer-bottom">
             © {new Date().getFullYear()} Webantrix. All rights reserved.
